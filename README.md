@@ -1,6 +1,6 @@
-# KX-AutoPPMS ![VERSION](https://img.shields.io/badge/Version-3.6.1-green.svg)
+# AutoComparePickup-with-ITAM ![VERSION](https://img.shields.io/badge/Version-3.6.1-green.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
-
+# 領貨清單與KB上的BataBase做比對
 ## 此程式可實現
   - 自動打卡
   - 自動填入溫度
