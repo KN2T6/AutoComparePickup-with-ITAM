@@ -1,6 +1,8 @@
 import pymysql, sys
 import joe_def_v2 as sw
 import xlrd
+from colorama import init # cmd color.
+init() # init color for windows cmd.
 
 # Default List
 List = "Test_File.xls"
@@ -48,6 +50,8 @@ try:
     print("")
     print("Success Quary Data : " + sw.col_green() + str(Success) + sw.col_def())
     print("Error Quary Data : " + sw.col_red() + str(Error) + sw.col_def())
+    input("Press Enter to Exit ...")
+    print("")
 
 except :
     raise
