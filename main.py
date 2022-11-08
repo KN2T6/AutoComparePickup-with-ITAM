@@ -1,15 +1,14 @@
 import pymysql, sys
 import joe_def_v2 as sw
 import xlrd
-from colorama import init # cmd color.
-init() # init color for windows cmd.
+from colorama import init
+init()
 
 # Default List
 List = "Test_File.xls"
 
 # DB Args
-db_settings = {"host": "192.168.68.252", "user": "python", "password": "Kx12930780@@", "db": "kx_db", "charset": "utf8"
-}
+db_settings = {"host": "192.168.68.252", "user": "python", "password": "Kx12930780@@", "db": "kx_db", "charset": "utf8"}
 
 # Drag and Drop
 if len(sys.argv) > 1:
@@ -27,8 +26,15 @@ nrows = sheet.nrows
 ncols = sheet.ncols
 
 # Connect DB
-conn = pymysql.connect(**db_settings)
-cursor = conn.cursor()
+try:
+    conn = pymysql.connect(**db_settings)
+    cursor = conn.cursor()
+except pymysql.err.OperationalError as err:
+    code, msg = err.args
+    if code == 2003:
+        print("Can't Connect to KB Database, Check Your Connection.")
+        input("Press Enter to Exit ... ")
+    raise
 
 # Main
 try:
@@ -56,4 +62,5 @@ try:
     input("Press Enter to Exit ...")
 
 except :
+    input("Something Error, Check with Coder ...")
     raise
