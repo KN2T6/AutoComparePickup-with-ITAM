@@ -1,13 +1,4 @@
-requests
-
-colorama
-
-xlrd==1.2.0
-xlwt
-xlutils
+pymysql
 pyinstaller
-
-selenium
-chromedriver_autoinstaller
-webdriver_manager
-
+colorama
+xlrd==1.2.0
