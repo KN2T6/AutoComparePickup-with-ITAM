@@ -47,11 +47,13 @@ try:
                sw.col_green() + " " + data[4] + \
                sw.col_yellow() + " " + data[9] + sw.col_def())
         Success += 1
+    cursor.close()
+    conn.close()
     print("")
     print("Success Quary Data : " + sw.col_green() + str(Success) + sw.col_def())
     print("Error Quary Data : " + sw.col_red() + str(Error) + sw.col_def())
-    input("Press Enter to Exit ...")
     print("")
+    input("Press Enter to Exit ...")
 
 except :
     raise
