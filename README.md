@@ -11,6 +11,13 @@
    * Version v1
      - 初版開發完成。
 
+## Example :
+此範例，完整比對300比資料，確認領貨都有在ITAM之中。
+![Info](./img/img1.jpg "Pic1")
+
+此範例，示範如果有錯誤序號，可以比對出不在ITAM之中，避免將尚未進貨的設備移轉進廠。
+![Info](./img/img2.jpg "Pic2")
+
 ## Useage
     #Init for Virtual Env 建立虛擬環境。
     virtualenv venv
