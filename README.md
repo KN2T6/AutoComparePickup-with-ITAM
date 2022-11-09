@@ -1,4 +1,4 @@
-# AutoComparePickup-with-ITAM ![VERSION](https://img.shields.io/badge/Version-1-green.svg)
+# AutoComparePickup-with-ITAM ![VERSION](https://img.shields.io/badge/Version-1.0-green.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
 # 領貨清單與KB上的DataBase做比對
 ## 此程式可實現
